@@ -1,3 +1,0 @@
-select concat(name, case when occupation='Doctor' then '(D)' when occupation='Singer' then '(S)' when occupation='Actor' then '(A)' when occupation='Professor' then '(P)' end) from occupations order by name; 
--- our first query is working fine lets code the another query 
-select case when occupation='Doctor' then concat('There are a total of ',count(name),' doctors.') when occupation='Singer' then concat('There are a total of ',count(name),' singers.') when occupation='Actor' then concat('There are a total of ',count(name),' actors.') when occupation='Professor' then concat('There are a total of ',count(name),' professors.') end from occupations group by occupation order by count(name);
