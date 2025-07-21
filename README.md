@@ -1,1 +1,1 @@
-HackerRank SQL answers
+HackerRank SQL Submissions
